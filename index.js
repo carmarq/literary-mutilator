@@ -33,3 +33,21 @@ function shufflize() {
 		document.getElementById("shuffle").textContent = words.join(" ");
 	});
 }
+
+function changeFont() {
+	var fon = document.getElementById("font");
+	if (fon.className == "monospaced") {
+		fon.className = 'roman';
+	} else {
+		fon.className = 'monospaced';
+	}
+}
+
+
+window.onkeyup = function () {
+	highlight();
+};
+
+function highlight() {
+	document.getElementById("cat").style.backgroundColor = "turquoise";
+}
