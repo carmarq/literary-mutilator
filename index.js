@@ -1,4 +1,4 @@
-function init() {
-	document.getElementById("kitty").innerHTML;
-	about.style.color = 'purple';
+function changeColor(newColor) {
+	var para1 = document.getElementById('kitty');
+	para1.style.color = newColor;
 }
